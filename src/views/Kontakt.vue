@@ -62,15 +62,19 @@
         >Reset</b-button
       >
     </div>
-       <b-alert v-if="error550" show variant="danger" class="mt-2">Unsere system kan nicht finden ihre E-mail Address.</b-alert>
+    <b-alert v-if="error550" show variant="danger" class="mt-2"
+      >Unsere system kan nicht finden ihre E-mail Address.</b-alert
+    >
 
-      <b-alert v-if="successfully" show variant="success" class="mt-2">Vielen dank für ihre mail, Wir werden Ihre Anfrage schnellstmöglich bearbeiten und uns mit Ihnen in Verbindung setzen.</b-alert>
-
+    <b-alert v-if="successfully" show variant="success" class="mt-2"
+      >Vielen dank für ihre mail, Wir werden Ihre Anfrage schnellstmöglich
+      bearbeiten und uns mit Ihnen in Verbindung setzen.</b-alert
+    >
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
   data() {
@@ -79,48 +83,48 @@ export default {
         email: "",
         name: "",
         message: "",
-        subject: "",
+        subject: ""
       },
       errors: [],
-      successfully: '',
-      error550: '',
+      successfully: "",
+      error550: ""
     };
   },
   watch: {
     form: {
-      handler: function () {
+      handler: function() {
         if (this.errors.length) this.errors = [];
       },
-      deep: true,
-    },
+      deep: true
+    }
   },
   methods: {
     onSubmit(evt) {
       this.checkForm(evt);
       if (!this.errors.length) {
         evt.preventDefault();
-        axios.post('http://localhost:5000/mail', {
-                name: this.form.name,
-                email: this.form.email,
-                subject: this.form.subject,
-                text: this.form.message
-            }).then((response) => {
-            
-            if (response.data.message == 'successfully'){ 
-              
-                this.successfully = 'successfully'
-                }
-            if(response.data.message == 'error'){ 
-                this.error550 = 'error' 
-                }
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        axios
+          .post("http://localhost:5000/mail", {
+            name: this.form.name,
+            email: this.form.email,
+            subject: this.form.subject,
+            text: this.form.message
+          })
+          .then(response => {
+            if (response.data.message == "successfully") {
+              this.successfully = "successfully";
+            }
+            if (response.data.message == "error") {
+              this.error550 = "error";
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
       }
     },
-    success(){
-        this.successfully = true;
+    success() {
+      this.successfully = true;
     },
     onReset() {
       this.form.email = "";
@@ -129,11 +133,11 @@ export default {
       this.form.subject = "";
       this.errors = [];
     },
-    validEmail: function (email) {
+    validEmail: function(email) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     },
-    checkForm: function (e) {
+    checkForm: function(e) {
       this.errors = [];
 
       if (!this.form.name) {
@@ -152,10 +156,9 @@ export default {
       }
 
       e.preventDefault();
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>

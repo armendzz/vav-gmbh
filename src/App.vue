@@ -21,9 +21,7 @@ export default {
   data: () => ({}),
 
   mounted() {
-    this.$store.dispatch('getimages')
-
-
+    this.$store.dispatch("getimages");
   }
 };
 </script>

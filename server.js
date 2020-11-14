@@ -15,13 +15,13 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
-  },
+    pass: process.env.PASSWORD
+  }
 });
 
 app.use(
   express.urlencoded({
-    extended: true,
+    extended: true
   })
 );
 
@@ -31,7 +31,7 @@ app.post("/mail", (req, res) => {
     from: name + " - " + email,
     to: process.env.MAILRECIEVER,
     subject: subject,
-    text: text,
+    text: text
   };
 
   if (name === undefined || email === undefined || text === undefined) {
@@ -40,11 +40,11 @@ app.post("/mail", (req, res) => {
     transporter.sendMail(mailData, function(err, info) {
       if (err != undefined) {
         console.log(err);
-        res.status(200).send({message: "error"});
+        res.status(200).send({ message: "error" });
       }
 
       if (info != undefined) {
-        res.status(200).send({message: "successfully"});
+        res.status(200).send({ message: "successfully" });
       }
     });
   }
