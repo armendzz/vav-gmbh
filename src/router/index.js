@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Gallery from "../views/Gallery.vue";
 import Uberuns from "../views/Uber-uns.vue";
 import Kontakt from "../views/Kontakt.vue";
+
 Vue.use(VueRouter);
 
 const routes = [

@@ -1,7 +1,6 @@
 import Vue from "vue";
+import axios from "axios";
 import Vuex from "vuex";
-var FB = require("fb");
-FB.setAccessToken(process.env.VUE_APP_FBAPI);
 
 Vue.use(Vuex);
 
@@ -16,25 +15,28 @@ export default new Vuex.Store({
   },
   actions: {
     getimages(context) {
-      FB.api(
-        "/vavarmierungengmbh/feed",
-        "GET",
-        { fields: "attachments{subattachments,media},message" },
-        function(response) {
-          let imgs = [];
-          response.data.forEach(element => {
-            if (
-              typeof element.attachments.data[0].subattachments !== "undefined"
-            ) {
-              let photo = element.attachments.data[0].subattachments.data;
-              photo.forEach(img => {
-                imgs.push(img.media.image.src);
-              });
-            }
-          });
-          context.commit("SET_IMAGES", imgs);
-        }
-      );
+     
+      axios.get('http://localhost:5000/foto')
+      .then(function (response) {
+       let data = response.data.data
+        let imgs = [];
+        data.forEach(element => {
+          if (
+            typeof element.attachments.data[0].subattachments !== "undefined"
+          ) {
+            let photo = element.attachments.data[0].subattachments.data;
+            photo.forEach(img => {
+              imgs.push(img.media.image.src);
+            });
+          }
+        });
+        context.commit("SET_IMAGES", imgs);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+     
     }
   },
   getters: {

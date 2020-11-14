@@ -20,6 +20,7 @@
     "morgan": "^1.10.0",
     "nodemailer": "^6.4.16",
     "nodemon": "^2.0.6",
+    "types": "^0.1.1",
     "vue": "^2.6.11",
     "vue-axios": "^3.1.3",
     "vue-gallery-slideshow": "^1.5.2",
