@@ -104,7 +104,7 @@ export default {
       if (!this.errors.length) {
         evt.preventDefault();
         axios
-          .post("http://server.vav-gmbh.ch/mail", {
+          .post("https://server.vav-gmbh.ch/mail", {
             name: this.form.name,
             email: this.form.email,
             subject: this.form.subject,
