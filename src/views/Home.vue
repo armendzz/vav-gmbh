@@ -11,10 +11,15 @@
       <br />
       <hr />
       <a href="tel:+41763163331">
-      <b-button size="lg" style="color: white" variant="primary"
-        ><b-icon class="mr-2" icon="telephone-outbound" variant="white"></b-icon>
-         +41 76 316 33 31</b-button
-      ></a>
+        <b-button size="lg" style="color: white" variant="primary"
+          ><b-icon
+            class="mr-2"
+            icon="telephone-outbound"
+            variant="white"
+          ></b-icon>
+          +41 76 316 33 31</b-button
+        ></a
+      >
     </b-jumbotron>
     <div class="container">
       <div>
@@ -24,10 +29,7 @@
 
         <div class="row my-10 justify-content-md-center">
           <v-card class="mt-4 mr-3 ml-3 col-lg-3">
-            <b-img
-              fluid
-              :src="require('../assets/Wohnanlagen.jpg')"
-            ></b-img>
+            <b-img fluid :src="require('../assets/Wohnanlagen.jpg')"></b-img>
 
             <v-card-title>Hochbau</v-card-title>
 
@@ -46,11 +48,7 @@
             </v-card-text>
           </v-card>
           <v-card class="mt-4 mr-2 ml-2 col-lg-3">
-            <b-img
-              fluid
-              :src="require('../assets/kliniken.jpg')"
-            ></b-img>
-           
+            <b-img fluid :src="require('../assets/kliniken.jpg')"></b-img>
 
             <v-card-title>Ingenieurbau u. Tiefbau</v-card-title>
 
@@ -70,10 +68,7 @@
           </v-card>
 
           <v-card class=" mt-4 mr-2 ml-2 col-lg-3">
-            <b-img
-              fluid
-             :src="require('../assets/Hochbau.jpg')"
-            ></b-img>
+            <b-img fluid :src="require('../assets/Hochbau.jpg')"></b-img>
 
             <v-card-title>Industriebau</v-card-title>
 
@@ -110,11 +105,7 @@
     <div class="mt-4">
       <div class="row" style=" background-color: #f6f6f6;">
         <div class="col-lg-5 col-sm-12 py-0">
-          <b-img
-            fluid
-            :src="require('../assets/planen.jpeg')"
-            
-          ></b-img>
+          <b-img fluid :src="require('../assets/planen.jpeg')"></b-img>
         </div>
         <div class="col-lg-5 col-sm-12 troni mr-5 ml-5">
           <div>
@@ -125,15 +116,25 @@
             </b-row>
 
             <h1>Unsere Geschichte</h1>
-          
 
-           <p> Bereits im Jahr 2019 wurde die VAV Armierungen GmbH gegründet. </p>
+            <p>
+              Bereits im Jahr 2019 wurde die VAV Armierungen GmbH gegründet.
+            </p>
 
-            <p>Derzeit sind über 10 Mitarbeiter in Vollzeit in einem unbefristetem Arbeitsverhältnis angestellt. </p>
+            <p>
+              Derzeit sind über 10 Mitarbeiter in Vollzeit in einem
+              unbefristetem Arbeitsverhältnis angestellt.
+            </p>
 
-           <p> Durch den Primären Geschäftszweig der Armierungen entwickelt sich unser Unternehmen immer weiter. </p>
+            <p>
+              Durch den Primären Geschäftszweig der Armierungen entwickelt sich
+              unser Unternehmen immer weiter.
+            </p>
 
-            <p>Anhand dieser Präsentation dürfen Sie sich heute die Firmenentwicklung und erfolge genauer ansehen. </p>
+            <p>
+              Anhand dieser Präsentation dürfen Sie sich heute die
+              Firmenentwicklung und erfolge genauer ansehen.
+            </p>
           </div>
         </div>
       </div>

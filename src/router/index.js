@@ -4,10 +4,10 @@ import Home from "../views/Home.vue";
 import Gallery from "../views/Gallery.vue";
 import Uberuns from "../views/Uber-uns.vue";
 import Kontakt from "../views/Kontakt.vue";
-import Datenschutz from '../views/Datenschutz.vue';
-import Impressum from '../views/Impressum.vue';
-import Agb from '../views/Agb.vue';
-import Verwaltung from '../views/Verwaltung.vue';
+import Datenschutz from "../views/Datenschutz.vue";
+import Impressum from "../views/Impressum.vue";
+import Agb from "../views/Agb.vue";
+import Verwaltung from "../views/Verwaltung.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -30,17 +30,17 @@ const routes = [
     path: "/uber-uns",
     name: "Uberuns",
     component: Uberuns
-  }, 
+  },
   {
     path: "/impressum",
     name: "Impressum",
     component: Impressum
-  }, 
-   {
+  },
+  {
     path: "/agb",
     name: "Agb",
     component: Agb
-  }, 
+  },
   {
     path: "/datenschutzerklaerung",
     name: "Datenschutz",
@@ -53,17 +53,14 @@ const routes = [
   }
 ];
 
-
 const router = new VueRouter({
   //mode: "history",
   base: process.env.BASE_URL,
-  routes,
- 
+  routes
 });
 // eslint-disable-next-line
 router.afterEach((to, from) => {
-  window.scrollTo(0, 0)
-
-})
+  window.scrollTo(0, 0);
+});
 
 export default router;

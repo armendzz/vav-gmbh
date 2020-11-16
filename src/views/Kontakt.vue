@@ -113,7 +113,7 @@ export default {
           .then(response => {
             if (response.data.message == "successfully") {
               this.successfully = "successfully";
-              this.onReset()
+              this.onReset();
             }
             if (response.data.message == "error") {
               this.error550 = "error";
