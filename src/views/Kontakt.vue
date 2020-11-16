@@ -6,7 +6,7 @@
         <b-alert show variant="danger">{{ error }}</b-alert>
       </div>
     </div>
-    <div class="mt-3">
+    <div class="mt-8">
       <b-form-group
         id="input-group-1"
         label="Email address:"
@@ -104,7 +104,7 @@ export default {
       if (!this.errors.length) {
         evt.preventDefault();
         axios
-          .post("http://localhost:5000/mail", {
+          .post("http://server.vav-gmbh.ch/mail", {
             name: this.form.name,
             email: this.form.email,
             subject: this.form.subject,
@@ -113,6 +113,7 @@ export default {
           .then(response => {
             if (response.data.message == "successfully") {
               this.successfully = "successfully";
+              this.onReset()
             }
             if (response.data.message == "error") {
               this.error550 = "error";

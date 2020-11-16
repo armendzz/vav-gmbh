@@ -3,17 +3,18 @@
     <b-jumbotron header="VAV ARMIERUNEGN GMBH">
       <br />
       <h3>
-        Ihr Spezialist für Armierungen aus St. Gallen
+        Ihr Spezialist für Armierungen aus dem Toggenburg
       </h3>
       <p>
         Wir verbinden, was ein Leben lang hält
       </p>
       <br />
       <hr />
+      <a href="tel:+41763163331">
       <b-button size="lg" style="color: white" variant="primary"
-        ><b-icon icon="telephone-outbound" variant="white"></b-icon>
-        Kontakt</b-button
-      >
+        ><b-icon class="mr-2" icon="telephone-outbound" variant="white"></b-icon>
+         +41 76 316 33 31</b-button
+      ></a>
     </b-jumbotron>
     <div class="container">
       <div>
@@ -25,7 +26,7 @@
           <v-card class="mt-4 mr-3 ml-3 col-lg-3">
             <b-img
               fluid
-              src="https://www.itc-armierungen.ch/wp-content/uploads/2020/08/Wohnanlagen.jpg"
+              :src="require('../assets/Wohnanlagen.jpg')"
             ></b-img>
 
             <v-card-title>Hochbau</v-card-title>
@@ -47,8 +48,9 @@
           <v-card class="mt-4 mr-2 ml-2 col-lg-3">
             <b-img
               fluid
-              src="https://www.itc-armierungen.ch/wp-content/uploads/2020/08/kliniken.jpg"
+              :src="require('../assets/kliniken.jpg')"
             ></b-img>
+           
 
             <v-card-title>Ingenieurbau u. Tiefbau</v-card-title>
 
@@ -70,7 +72,7 @@
           <v-card class=" mt-4 mr-2 ml-2 col-lg-3">
             <b-img
               fluid
-              src="https://www.itc-armierungen.ch/wp-content/uploads/2020/08/Hochbau.jpg"
+             :src="require('../assets/Hochbau.jpg')"
             ></b-img>
 
             <v-card-title>Industriebau</v-card-title>
@@ -110,7 +112,8 @@
         <div class="col-lg-5 col-sm-12 py-0">
           <b-img
             fluid
-            src="https://www.itc-armierungen.ch/wp-content/uploads/2020/09/itc_22.jpg"
+            :src="require('../assets/planen.jpeg')"
+            
           ></b-img>
         </div>
         <div class="col-lg-5 col-sm-12 troni mr-5 ml-5">
@@ -122,21 +125,15 @@
             </b-row>
 
             <h1>Unsere Geschichte</h1>
-            <p>
-              Bereits im Jahr 2019 wurde die VAV Armierunegn GMBH gegrundet.
-            </p>
-            <p>
-              Derzeit sind über 10 Mitarbeiter in Vollzeit in einem
-              unbefristetem Arbeitsverhältnis angestellt.
-            </p>
-            <p>
-              Durch den primärem geschäftszweig der armierungen entwickelte sich
-              unser unternehmen immer weiter.
-            </p>
-            <p>
-              Anhand dieser Präsentation dürfen Sie sich heute die
-              Firmenentwicklung und Erfolge genauer ansehen.
-            </p>
+          
+
+           <p> Bereits im Jahr 2019 wurde die VAV Armierungen GmbH gegründet. </p>
+
+            <p>Derzeit sind über 10 Mitarbeiter in Vollzeit in einem unbefristetem Arbeitsverhältnis angestellt. </p>
+
+           <p> Durch den Primären Geschäftszweig der Armierungen entwickelt sich unser Unternehmen immer weiter. </p>
+
+            <p>Anhand dieser Präsentation dürfen Sie sich heute die Firmenentwicklung und erfolge genauer ansehen. </p>
           </div>
         </div>
       </div>
@@ -196,7 +193,7 @@ export default {
       rgba(17, 14, 14, 0.616) 0%,
       rgba(66, 59, 59, 0.589) 100%
     ),
-    url("https://www.itc-armierungen.ch/wp-content/uploads/2020/08/home-1.jpg");
+    url("../assets/home-1.jpg");
   background-size: cover;
 
   color: white;

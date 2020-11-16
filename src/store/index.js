@@ -16,7 +16,7 @@ export default new Vuex.Store({
   actions: {
     getimages(context) {
      
-      axios.get('http://localhost:5000/foto')
+      axios.get('http://server.vav-gmbh.ch/foto')
       .then(function (response) {
        let data = response.data.data
         let imgs = [];
