@@ -71,18 +71,18 @@
           <b-nav-item
             href="#"
             :class="[
-              currentPage.includes('Gallery')
+              currentPage.includes('Referenzen')
                 ? 'h5 mr-3 active1'
                 : 'h5 mr-3 menulink'
             ]"
             @click="
-              $router.push('/gallery').catch(err => {
+              $router.push('/referenzen').catch(err => {
                 toTop();
               })
             "
           >
             <b-icon icon="card-image" variant="white"></b-icon>
-            Gallerie</b-nav-item
+            Referenzen</b-nav-item
           >
           <b-nav-item-dropdown class="h5 mr-3 menulink" right>
             <template slot="button-content">
@@ -103,6 +103,11 @@
 
             <b-dropdown-item
               class="h5 mr-3 dropdownitem"
+              @click="
+                $router.push('/team').catch(err => {
+                  toTop();
+                })
+              "
               href="#"
               variant="dark"
               ><b-icon icon="people" variant="dark"></b-icon>

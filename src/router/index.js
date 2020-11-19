@@ -1,13 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Gallery from "../views/Gallery.vue";
+import Referenzen from "../views/Gallery.vue";
 import Uberuns from "../views/Uber-uns.vue";
 import Kontakt from "../views/Kontakt.vue";
 import Datenschutz from "../views/Datenschutz.vue";
 import Impressum from "../views/Impressum.vue";
 import Agb from "../views/Agb.vue";
 import Verwaltung from "../views/Verwaltung.vue";
+import Team from "../views/Team.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -17,9 +18,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/gallery",
-    name: "Gallery",
-    component: Gallery
+    path: "/team",
+    name: "Team",
+    component: Team
+  },
+  {
+    path: "/referenzen",
+    name: "Referenzen",
+    component: Referenzen
   },
   {
     path: "/verwaltung",

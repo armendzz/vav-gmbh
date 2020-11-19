@@ -1,11 +1,12 @@
 <template>
   <div class="container">
     <div v-if="errors.length">
-      <b>Bitte korrigieren sie die folgenden Fehler:</b>
-      <div v-for="error in errors" :key="error">
-        <b-alert show variant="danger">{{ error }}</b-alert>
+      <div class="alert alert-danger" role="alert">
+        <b>Bitte korrigieren sie die folgenden Fehler:</b>
+        <li v-for="error in errors" :key="error">{{ error }}</li>
       </div>
     </div>
+
     <div class="mt-8">
       <b-form-group
         id="input-group-1"
@@ -83,11 +84,11 @@ export default {
         email: "",
         name: "",
         message: "",
-        subject: ""
+        subject: "",
       },
       errors: [],
       successfully: "",
-      error550: ""
+      error550: "",
     };
   },
   watch: {
@@ -95,8 +96,8 @@ export default {
       handler: function() {
         if (this.errors.length) this.errors = [];
       },
-      deep: true
-    }
+      deep: true,
+    },
   },
   methods: {
     onSubmit(evt) {
@@ -108,9 +109,9 @@ export default {
             name: this.form.name,
             email: this.form.email,
             subject: this.form.subject,
-            text: this.form.message
+            text: this.form.message,
           })
-          .then(response => {
+          .then((response) => {
             if (response.data.message == "successfully") {
               this.successfully = "successfully";
               this.onReset();
@@ -119,7 +120,7 @@ export default {
               this.error550 = "error";
             }
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
           });
       }
@@ -157,8 +158,8 @@ export default {
       }
 
       e.preventDefault();
-    }
-  }
+    },
+  },
 };
 </script>
 

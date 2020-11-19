@@ -4,12 +4,12 @@
       <h1>Verwaltung</h1>
       <hr />
       <div class="d-flex justify-content-center">
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-center">
           <div class="ml-3 mr-3 mt-3 mb-3">
             <b-card
               no-body
               style="max-width: 20rem;"
-              img-src="https://placekitten.com/380/200"
+              :img-src="require('../assets/img/VAV Fotos/Nazmi Selmani.jpg')"
               img-alt="Image"
               img-top
             >
@@ -159,7 +159,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              img-src="https://placekitten.com/380/200"
+              :img-src="require('../assets/img/VAV Fotos/Elmedin Abazi.jpg')"
               img-alt="Image"
               img-top
             >
