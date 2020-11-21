@@ -20,8 +20,6 @@
           +41 76 316 33 31</b-button
         ></a
       >
-     
-  
     </b-jumbotron>
     <div class="container">
       <div>
@@ -143,27 +141,32 @@
     </div>
     <div class="mt-2" style="background-color: rgb(34 225 255 / 3%);">
       <div class="container">
-        <h1 class="titlefont">REFERENZEN</h1>
+        <div class="row justify-content-center">
+          <h1 class="titlefont">REFERENZEN</h1>
+        </div>
         <div class="justify-content-center">
           <div class="row justify-content-center">
-        <img
-          class="image col-md-2 col-4"
-          v-for="(image, i) in lastTenImg"
-          :src="image"
-          :key="i"
-          @click="index = i"
-          
-        />
-        </div></div>
-        <vue-gallery-slideshow
-          :images="lastTenImg"
-          :index="index"
-          @close="index = null"
-        ></vue-gallery-slideshow>
+            <img
+              class="image col-md-2 col-4"
+              v-for="(image, i) in lastTenImg"
+              :src="image"
+              :key="i"
+              @click="index = i"
+            />
 
-        <router-link to="/referenzen">
-          <button class="btn btn-primary btn-lg d-flex">Alle REFERENZEN</button>
-        </router-link>
+            <vue-gallery-slideshow
+              :images="lastTenImg"
+              :index="index"
+              @close="index = null"
+            ></vue-gallery-slideshow>
+
+            <router-link to="/referenzen">
+              <button class="btn btn-primary btn-lg d-flex">
+                Alle REFERENZEN
+              </button>
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -228,81 +231,79 @@ export default {
 }
 
 .pulse {
-   margin: 100px;
-   display: block;
-   background: #cca92c;
-   cursor: pointer;
-   box-shadow: 0 0 0 rgba(0, 123, 255, 0.39);
-   animation: pulse 1.5s infinite;
-   position: relative;
+  margin: 100px;
+  display: block;
+  background: rgba(0, 123, 255);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 123, 255, 0.39);
+  animation: pulse 1.5s infinite;
+  position: relative;
 }
 .pulse::before {
-   content: '';
-   box-shadow: 0 0 0 rgba(0, 123, 255, 0.4);
-   animation: pulse2 1.5s infinite;
-   animation-delay: 0.5s;
-   border-radius: 12%;
-   display: block;
-   position: absolute;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   margin: auto;
+  content: "";
+  box-shadow: 0 0 0 rgba(0, 123, 255, 0.4);
+  animation: pulse2 1.5s infinite;
+  animation-delay: 0.5s;
+  border-radius: 12%;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 .pulse:hover {
-   animation: none;
+  animation: none;
 }
 @-webkit-keyframes pulse {
-   0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-   }
-   70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-   }
-   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-   }
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
 }
 @keyframes pulse {
-   0% {
-      -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-   }
-   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-      box-shadow: 0 0 0 40px rgba(0, 123, 255, 0);
-   }
-   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-   }
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    box-shadow: 0 0 0 40px rgba(0, 123, 255, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
 }
 @-webkit-keyframes pulse2 {
-   0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-   }
-   70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-   }
-   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-   }
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
 }
 @keyframes pulse2 {
-   0% {
-      -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
-   }
-   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-      box-shadow: 0 0 0 60px rgba(0, 123, 255, 0);
-   }
-   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-   }
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    box-shadow: 0 0 0 60px rgba(0, 123, 255, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
 }
-
-
 </style>

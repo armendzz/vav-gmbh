@@ -84,11 +84,11 @@ export default {
         email: "",
         name: "",
         message: "",
-        subject: "",
+        subject: ""
       },
       errors: [],
       successfully: "",
-      error550: "",
+      error550: ""
     };
   },
   watch: {
@@ -96,8 +96,8 @@ export default {
       handler: function() {
         if (this.errors.length) this.errors = [];
       },
-      deep: true,
-    },
+      deep: true
+    }
   },
   methods: {
     onSubmit(evt) {
@@ -109,9 +109,9 @@ export default {
             name: this.form.name,
             email: this.form.email,
             subject: this.form.subject,
-            text: this.form.message,
+            text: this.form.message
           })
-          .then((response) => {
+          .then(response => {
             if (response.data.message == "successfully") {
               this.successfully = "successfully";
               this.onReset();
@@ -120,7 +120,7 @@ export default {
               this.error550 = "error";
             }
           })
-          .catch((error) => {
+          .catch(error => {
             console.log(error);
           });
       }
@@ -158,8 +158,8 @@ export default {
       }
 
       e.preventDefault();
-    },
-  },
+    }
+  }
 };
 </script>
 
