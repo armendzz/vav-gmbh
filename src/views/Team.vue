@@ -41,9 +41,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="
-                require('../assets/img/VAV Fotos/Didi Dietiker-v.jpeg')
-              "
+              :img-src="require('../assets/img/VAV Fotos/Didi Dietiker-v.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -57,9 +55,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="
-                require('../assets/img/VAV Fotos/Hyusein Imam-v.jpeg')
-              "
+              :img-src="require('../assets/img/VAV Fotos/Hyusein Imam-v.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -105,9 +101,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="
-                require('../assets/img/VAV Fotos/Shaban Byalev-v.jpeg')
-              "
+              :img-src="require('../assets/img/VAV Fotos/Shaban Byalev-v.jpeg')"
               img-alt="Image"
               img-top
             >
