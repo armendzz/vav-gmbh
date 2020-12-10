@@ -9,7 +9,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Nazmi Selmani.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Nazmi Selmani.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -25,7 +25,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Elmedin Abazi.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Elmedin Abazi.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -42,7 +42,7 @@
               no-body
               style="max-width: 20rem;"
               :img-src="
-                require('../assets/img/VAV Fotos/Didi Dietiker (Vorarbeiter).jpg')
+                require('../assets/img/VAV Fotos/Didi Dietiker-v.jpeg')
               "
               img-alt="Image"
               img-top
@@ -58,7 +58,7 @@
               no-body
               style="max-width: 20rem;"
               :img-src="
-                require('../assets/img/VAV Fotos/Hyusein Imam (Vorarbeiter).jpg')
+                require('../assets/img/VAV Fotos/Hyusein Imam-v.jpeg')
               "
               img-alt="Image"
               img-top
@@ -74,7 +74,7 @@
               no-body
               style="max-width: 20rem;"
               :img-src="
-                require('../assets/img/VAV Fotos/Kujtim Arslani (Vorarbeiter).jpg')
+                require('../assets/img/VAV Fotos/Kujtim Arslani-v.jpeg')
               "
               img-alt="Image"
               img-top
@@ -90,7 +90,7 @@
               no-body
               style="max-width: 20rem;"
               :img-src="
-                require('../assets/img/VAV Fotos/Mehmed Hadzhiev (Vorarbeiter).jpg')
+                require('../assets/img/VAV Fotos/Mehmed Hadzhiev-v.jpeg')
               "
               img-alt="Image"
               img-top
@@ -106,7 +106,7 @@
               no-body
               style="max-width: 20rem;"
               :img-src="
-                require('../assets/img/VAV Fotos/Shaban Byalev (Vorarbeiter).jpg')
+                require('../assets/img/VAV Fotos/Shaban Byalev-v.jpeg')
               "
               img-alt="Image"
               img-top
@@ -121,7 +121,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Agron Fejzulai.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Agron Fejzulai.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -135,7 +135,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Halimas Xhoc.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Halimas Xhoc.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -149,7 +149,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Refet Djaferi.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Refet Djaferi.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -163,7 +163,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Salih Tairov.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Salih Tairov.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -177,7 +177,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Selim Bukovski.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Selim Bukovski.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -191,7 +191,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Tefik Zerbash.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Tefik Zerbash.jpeg')"
               img-alt="Image"
               img-top
             >

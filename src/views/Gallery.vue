@@ -5,13 +5,14 @@
         <h1 class="titlefont">Referenzen</h1>
         <div class="justify-content-center">
           <div class="row justify-content-center">
-            <img
-              class="image col-md-2 col-4"
-              v-for="(image, i) in $store.state.images"
-              :src="image"
-              :key="i"
-              @click="index = i"
-            />
+          
+               <div
+            v-for="(image, i) in $store.state.images"
+            :key="i"
+            class="imagee col-md-2 col-4"
+          >
+            <img class="img" :src="image" @click="index = i" />
+          </div>
           </div>
         </div>
         <vue-gallery-slideshow
@@ -51,5 +52,27 @@ export default {
   border-radius: 3px;
   border: 1px solid lightgray;
   object-fit: contain;
+}
+
+
+
+.imagee {
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  object-fit: contain;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.img {
+  
+  height: 150px;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

@@ -186,7 +186,10 @@ export default {
 a {
   text-decoration: none !important;
 }
-
+.navbar {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
 /* 
 .navbar-light .navbar-nav .nav-link:hover {
   border-bottom: solid 3px white;

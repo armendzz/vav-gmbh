@@ -146,14 +146,14 @@
         </div>
         <div class="justify-content-center">
           <div class="row justify-content-center">
-            <img
-              class="image col-md-2 col-4"
-              v-for="(image, i) in lastTenImg"
-              :src="image"
-              :key="i"
-              @click="index = i"
-            />
-
+         
+             <div
+            v-for="(image, i) in lastTenImg"
+            :key="i"
+            class="imagee col-md-2 col-4"
+          >
+            <img class="img" :src="image" @click="index = i" />
+          </div>
             <vue-gallery-slideshow
               :images="lastTenImg"
               :index="index"
@@ -305,5 +305,25 @@ export default {
     -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
     box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
   }
+}
+
+.imagee {
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  object-fit: contain;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.img {
+  
+  height: 150px;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

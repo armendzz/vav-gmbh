@@ -9,7 +9,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Nazmi Selmani.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Nazmi Selmani.jpeg')"
               img-alt="Image"
               img-top
             >
@@ -159,7 +159,7 @@
             <b-card
               no-body
               style="max-width: 20rem;"
-              :img-src="require('../assets/img/VAV Fotos/Elmedin Abazi.jpg')"
+              :img-src="require('../assets/img/VAV Fotos/Elmedin Abazi.jpeg')"
               img-alt="Image"
               img-top
             >
